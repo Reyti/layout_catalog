@@ -1,0 +1,21 @@
+.catalog {
+  padding: 50px 40px;
+
+  display: grid;
+  grid-template: 1fr / 200px;
+
+  @include screen-phone {
+    grid-template: 1fr 1fr / 200px 200px;
+  }
+
+  @include screen-tablet {
+    grid-template: 1fr 1fr 1fr / 200px 200px 200px;
+  }
+
+  @include screen-laptop {
+    grid-template: 1fr 1fr 1fr 1fr / 200px 200px 200px 200px;
+  }
+
+  justify-content: center;
+  gap: 46px 48px;
+}
