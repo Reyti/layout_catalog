@@ -2,18 +2,22 @@
   padding: 50px 40px;
 
   display: grid;
-  grid-template: 1fr / 200px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 200px;
 
   @include screen-phone {
-    grid-template: 1fr 1fr / 200px 200px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 200px 200px;
   }
 
   @include screen-tablet {
-    grid-template: 1fr 1fr 1fr / 200px 200px 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 200px 200px 200px;
   }
 
   @include screen-laptop {
-    grid-template: 1fr 1fr 1fr 1fr / 200px 200px 200px 200px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 200px 200px 200px 200px;
   }
 
   justify-content: center;
